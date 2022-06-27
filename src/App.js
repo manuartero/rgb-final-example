@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { Card } from "components";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <Card price={10.0}/>
         </a>
       </header>
     </div>
