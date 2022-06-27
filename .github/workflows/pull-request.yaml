@@ -1,0 +1,25 @@
+name: pull request
+
+on: [pull_request]
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+
+    container:
+      image: node:16-alpine
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies (CI)
+        run: npm ci
+
+      - name: run unit tests
+        run: npm test
+
+      - name: run linter
+        run: npm run lint
+
+      - name: check style
+        run: npm run check-style

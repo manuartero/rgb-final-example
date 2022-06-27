@@ -14,7 +14,8 @@
   "scripts": {
     "start": "react-scripts start",
     "lint": "eslint .",
-    "style": "prettier --write .",
+    "apply-style": "prettier --write .",
+    "check-style": "prettier --check .",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
